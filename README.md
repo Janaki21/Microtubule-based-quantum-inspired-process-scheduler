@@ -1,0 +1,2 @@
+# Microtubule-based-quantum-inspired-process-scheduler
+This project presents a quantum-inspired process scheduling algorithm modeled on the microtubule dynamics of neurons. Unlike classical schedulers (FCFS, RR, Priority, etc.), QIMS leverages stochastic resonance, probabilistic transitions, and adaptive reconfiguration analogous to quantum tunneling in microtubules to optimize CPU resource allocation.
