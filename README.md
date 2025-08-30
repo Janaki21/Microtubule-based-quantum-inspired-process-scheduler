@@ -1,5 +1,3 @@
-# Microtubule-based-quantum-inspired-process-scheduler
-This project presents a quantum-inspired process scheduling algorithm modeled on the microtubule dynamics of neurons. Unlike classical schedulers (FCFS, RR, Priority, etc.), QIMS leverages stochastic resonance, probabilistic transitions, and adaptive reconfiguration analogous to quantum tunneling in microtubules to optimize CPU resource allocation.
 Title: Microtubules Inspired Quantum Adaptive Scheduling Algorithm 
 
  
@@ -46,6 +44,7 @@ Output:
  Code Block 2: Extends the system by simulating 20 processes and tracking how probabilities work and evolve over time. They produce line plots showing how each tasks probability changes with each scheduling step. 
 
  
+[Document 6.pdf](https://github.com/user-attachments/files/22055932/Document.6.pdf)
 
  
 
@@ -55,92 +54,39 @@ Code Block 3:  The scheduler’s main execution loop runs while each process is 
 
  
 
- 
+
  
 
 Differences from Classical Scheduling: 
- Our proposed scheduling algorithm introduces a fundamentally different approach compared to traditional CPU scheduling techniques. In classical scheduling methods such as First Come First Serve, Shortest Job First, Round Robin or Priority Scheduling, processes are queued and executed based on static or deterministic rules. These methods follow rigid structures that can lead to inefficiencies when process arrival times, burst durations, or priorities fluctuate dynamically throughout the operation. For instance, Round Robin relies on a fixed quantum state which if becomes too large, behaves like FCFS and if too small, increases context switching overhead. Similarly, Priority Scheduling suffers from starvation issues and Shortest Job First cannot adapt e 
-
- 
-
-ffectively  
+ Our proposed scheduling algorithm introduces a fundamentally different approach compared to traditional CPU scheduling techniques. In classical scheduling methods such as First Come First Serve, Shortest Job First, Round Robin or Priority Scheduling, processes are queued and executed based on static or deterministic rules. These methods follow rigid structures that can lead to inefficiencies when process arrival times, burst durations, or priorities fluctuate dynamically throughout the operation. For instance, Round Robin relies on a fixed quantum state which if becomes too large, behaves like FCFS and if too small, increases context switching overhead. Similarly, Priority Scheduling suffers from starvation issues and Shortest Job First cannot adapt effectively  
 
 in real time scenarios. All these limitations arise because the classical models lack adaptive and probabilistic mechanisms to distribute CPU time more flexibly. 
 
 Our quantum inspired process scheduling model addresses these limitations by introducing a probabilistic time allocation mechanism which is inspired from the concept of superposition in quantum theory. Instead of assigning fixed slots or strict ordering, each process is given a dynamic execution probability based on its burst time and priority. This creates a state called “superposition queue" where multiple processes exist simultaneously with varying similarities of selection. The scheduler then samples processes according to these probabilities, allowing fairer and more balanced distribution of CPU cycles. Such an approach adapts better to changing workloads, reduces starvation and ensures that both short and long processes receive execution opportunities proportionally. The probabilistic selection mirrors how quantum systems collapse into specific states and thus providing flexibility without chaos. 
 
 Compared to deterministic scheduling, this model demonstrates greater adaptability in handling diverse workloads. For example, in heavy multitasking environments, it ensures that small tasks are not indefinitely delayed while long processes still make steady progress. The inclusion of dynamic probability adjustment allows the scheduler to continuously rebalance CPU allocation without relying on rigid rules. This results in improved average waiting time, reduced turnaround variance and a more equitable process execution pattern throughout. By combining mathematical modeling with concepts inspired by quantum mechanics, our approach introduces a new paradigm that bridges classical scheduling’s simplicity with the adaptability required in modern, high concurrency systems. 
-
- 
-
-Differentiation from Classical Scheduling 
-
-Feature 
-
-Classical Scheduling 
-
-Quantum-Inspired Scheduling 
-
-Decision Mechanism 
-
-Deterministic (fixed rules) 
-
-Probabilistic (weighted random sampling) 
-
-Quantum Handling 
-
-Fixed (e.g., RR quantum is static) 
-
-Dynamic, adapts to process characteristics 
-
-Fairness 
-
-Can lead to starvation 
-
-Probabilistic fairness ensures all processes have a chance 
-
-Adaptability 
-
-Weak (rigid rules) 
-
-Strong (adapts to workload fluctuations) 
-
-Innovation 
-
-Traditional OS design 
-
-Inspired by quantum principles (superposition & collapse) 
-
- 
-
- 
-
  
 
 Visualizations and Results: 
- The algorithm generates two key visual outputs: 
-
-Task Selection Frequency Histogram which shows how many times each task was scheduled over multiple iterations. 
-
-Probability Evolution Plot which shows how each task’s probability fluctuates dynamically over time, demonstrating fairness and instability. 
+ 	*The algorithm generates two key visual outputs: 
+	*Task Selection Frequency Histogram which shows how many times each task was scheduled over multiple iterations. 
+	*Probability Evolution Plot which shows how each task’s probability fluctuates dynamically over time, demonstrating fairness and instability. 
 
  
 
 Applications & Future Scope: 
+	*Operating system CPU scheduling for adaptive environments. 
+ 	*Real time embedded systems where fairness is critical. 
+  	*Cloud computing load balancing. 
+   	*Bio inspired AI systems. 
+	*Extension towards quantum-inspired distributed schedulers. 
 
-Operating system CPU scheduling for adaptive environments. 
 
-Real time embedded systems where fairness is critical. 
-
-Cloud computing load balancing. 
-
-Bio inspired AI systems. 
-
-Extension towards quantum-inspired distributed schedulers. 
 
  
+[Microtubule inspired process scheduling README file.pdf](https://github.com/user-attachments/files/22055933/Microtubule.inspired.process.scheduling.README.file.pdf)
 
- 
+ For represetation of the complete prototye outputs please refer the document attached above
 
  
 
