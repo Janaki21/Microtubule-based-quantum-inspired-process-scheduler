@@ -36,19 +36,12 @@ System Design :
  Step 6: Record scheduling history and visualize task frequency and probability evolution. 
 
 Code Explanation: 
+
  Code Block 1: Demonstrates a small set of tasks being scheduled probabilistically with random fluctuations which will produces a histogram of task frequency. 
-
-Output: 
-
  
  Code Block 2: Extends the system by simulating 20 processes and tracking how probabilities work and evolve over time. They produce line plots showing how each tasks probability changes with each scheduling step. 
 
- 
-[Document 6.pdf](https://github.com/user-attachments/files/22055932/Document.6.pdf)
-
- 
-
-Code Block 3:  The scheduler’s main execution loop runs while each process is assigned a probability weight based on burst time and priority, and one process is selected using weighted random sampling. The chosen process executes for one unit, reducing its burst time, while probabilities are recalculated so chances shift dynamically. This prevents starvation and adapts as processes evolve. Unlike classical schedulers like Round Robin, Priority, which follow fixed rules, this loop introduces a quantum like element selection is probabilistic but still fair and guided. It is the core mechanism that makes the scheduler both adaptive and balanced.  
+ Code Block 3:  The scheduler’s main execution loop runs while each process is assigned a probability weight based on burst time and priority, and one process is selected using weighted random sampling. The chosen process executes for one unit, reducing its burst time, while probabilities are recalculated so chances shift dynamically. This prevents starvation and adapts as processes evolve. Unlike classical schedulers like Round Robin, Priority, which follow fixed rules, this loop introduces a quantum like element selection is probabilistic but still fair and guided. It is the core mechanism that makes the scheduler both adaptive and balanced.  
 
  
 
